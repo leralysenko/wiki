@@ -28,7 +28,7 @@ export class ProjectManagerService {
   }
 
   getUser(): Observable<any> {
-    return this.http.get<any>(`${this.proxyurl}en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&formatversion=2&titles=${this.name}`).pipe(
+    return this.http.get<any>(`${this.proxyurl}en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&contentformat=json&formatversion=2&titles=${this.name}`).pipe(
       map(res => res.query.pages));
   }
 }

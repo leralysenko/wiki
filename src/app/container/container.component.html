@@ -3,6 +3,21 @@
   <input type="text" class="form-control" [(ngModel)]="url">
   <button class="btn  btn-dark input-btn" (click)="submitURL()">OK</button>
 </div>
-<div>
- 
+<div *ngIf="isSpouses">
+  Spouses:
+  <ul>
+    <li *ngFor="let spouse of spouses">{{spouse.data}}<span *ngIf="spouse.link" class="goodRes">&#10003;</span><span *ngIf="!spouse.link" class="badRes">Not Available</span></li>
+  </ul>
+</div>
+<div *ngIf="isChildren">
+  Children:
+  <ul>
+    <li *ngFor="let child of children">{{child.data}}<span *ngIf="child.link" class="goodRes">&#10003;</span><span *ngIf="!child.link" class="badRes">Not Avalible</span></li>
+  </ul>
+</div>
+<div *ngIf="isParents">
+  Parents:
+  <ul>
+    <li *ngFor="let parent of parents">{{parent.data}}<span *ngIf="parent.link" class="goodRes">&#10003;</span><span *ngIf="!parent.link" class="badRes">Not Avalible</span></li>
+  </ul>
 </div>

@@ -24,6 +24,8 @@
     "core-js": "^2.5.4",
     "cors": "^2.8.5",
     "rxjs": "~6.3.3",
+    "wiki-infobox": "^0.4.0",
+    "wiki_relatives_parser": "git+https://Reinegardie@bitbucket.org/Reinegardie/wiki_relatives_parser.git",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -31,9 +33,9 @@
     "@angular/cli": "~7.0.5",
     "@angular/compiler-cli": "~7.0.0",
     "@angular/language-service": "~7.0.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^8.9.5",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
