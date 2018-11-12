@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectManagerService } from '../services/project-manager.service';
-import getRelativeNames, {hasLink} from  'wiki_relatives_parser'
+import getRelativeNames from  'wiki_relatives_parser';
+import { hasLink } from 'wiki_relatives_parser/helpers';
 
 @Component({
   selector: 'app-container',
